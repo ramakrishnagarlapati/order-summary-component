@@ -79,6 +79,13 @@ main {
 .change-plan a {
     color: hsl(223, 64%, 50%);
     font-weight: 700;
+    transition: all 0.3s;
+}
+
+.change-plan a:hover {
+    color: hsl(226, 93%, 66%);
+    filter: brightness(110%);
+
 }
 
 .info-container button {
@@ -87,16 +94,27 @@ main {
     font-family: 'Red Hat Display', sans-serif;
     font-size: 1rem;
     padding: 1rem;
-    background-color: hsl(245, 74%, 53%);
+    background-color: rgb(61, 46, 224);
     color: white;
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
-.info-container a {
+.info-container button:hover {
+    filter: brightness(120%);
+    box-shadow: 0 10px 10px hsl(224, 45%, 77%);
+}
+
+.info-container .cancel {
     text-decoration: none;
     color: hsl(224, 23%, 55%);
+    transition: all 0.3s;
+}
+
+.info-container .cancel:hover {
+    filter: brightness(80%);
 }
 
 @media screen and (min-width:375px) {
