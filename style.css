@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccdbff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+    max-width: 90%;
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+.image-container img {
+    max-width: 100%;
+    display: block;
+    border-radius: 15px 15px 0 0;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.info-container .summary {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.info-container .info {
+    margin: 1.5rem 0;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+
+}
+
+.plan-info {
+    display: flex;
+    align-items: center;
+}
+
+.plan-info .icon {
+    margin-right: 1rem;
+}
+
+.plan-info .plan-price .title {
+    font-weight: 700;
+}
+
+.plan-info .plan-price .price {
+    color: hsl(224, 23%, 55%);
+    font-size: 0.9rem;
+}
+
+.change-plan a {
+    color: hsl(223, 64%, 50%);
+    font-weight: 700;
+}
+
+.info-container button {
+    width: 100%;
+    margin: 1.5rem 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: hsl(245, 74%, 53%);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.info-container a {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+@media screen and (min-width:375px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    main {
+        max-width: 350px;
+    }
+}
